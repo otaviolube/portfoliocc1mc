@@ -2,52 +2,200 @@
 
 <head>
     <title>Currículo Virtual</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        header img {
+            border-radius: 50%;
+        }
+
+        div#elementos {
+            background-color: lightcyan;
+        }
+
+        div#ladoalado {
+            background-color: lightseagreen;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        footer {
+            background-color: rebeccapurple;
+            height: 60px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer a {
+            margin: 10px;
+        }
+
+        nav {
+            background-color: red;
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        nav ul li {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        nav ul li a:hover {
+            background-color: blue;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1>Currículo Virtual</h1>
-    <h2>Otávio Lube dos Santos</h2><img src="./imagens/foto.jpg" alt="otavio" width="200px">
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quasi pariatur aut, laboriosam laudantium at
-        necessitatibus voluptates inventore quaerat perferendis vel, nobis fugit rerum architecto labore! Ab aperiam sed
-        est!</p>
-    <h2>Habilidades</h2>
-    <ul>
-        <li>Chato</li>
-        <li>Legal</li>
-        <li>Persistente</li>
-    </ul>
 
-    
+    <header>
+        <h1>Otávio Lube dos Santos</h1>
+        <img src="./imagens/foto.jpg" alt="otavio" width="200px">
+    </header>
 
-    <h2>Pontos Postivos</h2>
-    <ol>
-        <li>Legal</li>
-    </ol>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CONTATO</a></li>
+            <li><a href="#">SERVIÇOS</a></li>
+        </ul>
+    </nav>
 
-    <h2>Contato</h2>
+    <main>
+        <section id="elementos">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quasi pariatur aut, laboriosam laudantium
+                at
+                necessitatibus voluptates inventore quaerat perferendis vel, nobis fugit rerum architecto labore! Ab
+                aperiam
+                sed
+                est!</p>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Chato</li>
+                <li>Legal</li>
+                <li>Persistente</li>
+            </ul>
+            <h2>Pontos Postivos</h2>
+            <ol>
+                <li>Legal</li>
+            </ol>
 
-    <form action="#" method="get">
-        <label for="email">Email</label> <br>
-        <input type="text" name="email" id="email">
-        <br>
-        <label for="mensagem">Mensagem</label><br>
-        <textarea name="mensagem" cols="30" rows="10"></textarea><br>
-        <label for="dob">Data de Nascimento</label><br>
-        <input type="date" name="dob"><br>
-        <label for="cor">Cor Preferida</label><br>
-        <input type="color"><br>
-        <input type="submit">
-    </form>
+            <h2>Tabela de Experiências</h2>
 
-    <a href="https://www.instagram.com/prof.otaviolube/" target="_blank"><img width="40px"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
-            alt="instagram"></a>
+            <table border="1">
+                <thead>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Salário</th>
+                    <th>Observação</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UVV</td>
+                        <td>Professor</td>
+                        <td>Milão</td>
+                        <td>Aqui é legal</td>
+                    </tr>
+                    <tr>
+                        <td>UVV</td>
+                        <td>Professor</td>
+                        <td>Milão</td>
+                        <td>Aqui é legal</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Construída por @otaviolube</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-    <a href="https://br.linkedin.com/in/otaviolube" target="_blank"><img width="40px"
-            src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="linkedin"></a>
+        <section id="ladoalado">
+            <article id="contato">
+                <h2>Contato</h2>
 
-    <a href="https://github.com/otaviolube" target="_blank"><img width="40px"
-            src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a>
+                <form action="#" method="get">
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="email" id="email">
+                    <br>
+                    <label for="mensagem">Mensagem</label><br>
+                    <textarea name="mensagem" cols="30" rows="10"></textarea><br>
+                    <label for="dob">Data de Nascimento</label><br>
+                    <input type="date" name="dob"><br>
+                    <label for="cor">Cor Preferida</label><br>
+                    <input type="color"><br>
+                    <input type="submit">
+                </form>
+            </article>
+
+            <article id="mapa">
+                <iframe width="425" height="350"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-40.30280828475953%2C-20.35732157986584%2C-40.29450416564942%2C-20.35140693471933&amp;layer=mapnik"
+                    style="border: 1px solid black"></iframe><br /><small><a
+                        href="https://www.openstreetmap.org/#map=17/-20.35436/-40.29866">Ver mapa maior</a></small>
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <a href="https://www.instagram.com/prof.otaviolube/" target="_blank"><img width="40px"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
+                alt="instagram"></a>
+
+        <a href="https://br.linkedin.com/in/otaviolube" target="_blank"><img width="40px"
+                src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="linkedin"></a>
+
+        <a href="https://github.com/otaviolube" target="_blank"><img width="40px"
+                src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github"></a>
+    </footer>
+
+
+
 
 
 </body>
